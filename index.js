@@ -1,9 +1,12 @@
 var express = require('express');
 var app = express();
+var router = express.Router();
 
-app.get('/', function (req, res) {
-  res.send('This is the api endpoint');
+router.get('/', function(req, res) {
+    res.send('This is the api endpoint');  
 });
+
+app.use('/api', router);
 
 var port = process.env.PORT || 7000;
 var server = app.listen(port , function () {
