@@ -2,9 +2,9 @@
   "name": "chathops-api",
   "version": "1.0.0",
   "description": "Server side of ChatHops for helping with OAuth authentication for clients",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
